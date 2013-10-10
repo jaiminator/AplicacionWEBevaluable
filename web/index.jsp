@@ -6,7 +6,7 @@
 <%
     Date hoy = new Date();
     EntidadBancariaDAO entidadBancariaDAO = new EntidadBancariaDAO();
-    EntidadBancaria entidadBancaria = entidadBancariaDAO.read(2);
+    EntidadBancaria entidadBancaria = entidadBancariaDAO.read(1);
 %>
 
 <!DOCTYPE html>
@@ -14,6 +14,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <h2><%=entidadBancaria%></h2>
     </head>
     <body>
         
