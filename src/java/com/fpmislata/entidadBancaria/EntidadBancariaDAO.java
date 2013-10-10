@@ -31,8 +31,11 @@ public class EntidadBancariaDAO {
 
         preparedStatement.setInt(1, idEntidadBancaria);
         ResultSet resultSet = preparedStatement.executeQuery();
+        
+        EntidadBancaria entidadBancaria = new EntidadBancaria();
+            
 
-        while (resultSet.next()) {
+        while (!resultSet.next()) {
 
 
             String idEntidadBancaria1 = resultSet.getString("idEntidadBancaria");
@@ -40,12 +43,12 @@ public class EntidadBancariaDAO {
             String nombre = resultSet.getString("nombre");
             String cif = resultSet.getString("cif");
             String tipoEntidadBancaria = resultSet.getString("tipoEntidadBancaria");
-            
-            EntidadBancaria entidadBancaria = new EntidadBancaria();
-        }
-
+        } 
+           
         return entidadBancaria;
-    }
+
+        
+}
 
     public void insert(EntidadBancaria entidadBancaria) throws SQLException {
         String insertEntidadSQL = "INSERT INTO entidadBancaria"
