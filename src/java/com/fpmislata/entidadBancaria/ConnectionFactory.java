@@ -11,5 +11,5 @@ import java.sql.Connection;
  * @author alumno
  */
 public interface ConnectionFactory {
-    public Connection getConnection();
+    public Connection getConnection() throws Exception;
 }

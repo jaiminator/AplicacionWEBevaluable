@@ -5,6 +5,9 @@
 package com.fpmislata.entidadBancaria;
 
 import java.sql.Connection;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
 
 /**
  *
@@ -16,9 +19,19 @@ public class ConnectionFactoryImplJDBC implements ConnectionFactory {
         return null;
     }
     
+    
     @Override
-    public Connection getConnection() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Connection getConnection() throws Exception {
+        InitialContext initCtx = new InitialContext();;
+        Context envCtx = (Context) initCtx.lookup("java:comp/env");
+        DataSource ds = (DataSource)envCtx.lookup("jdbc/banco");
+        
+        DataSource dataSource = null;
+        Connection connection = dataSource.getConnection();
+        
+        connection.close();
+        
+        return null;
     }
     
 }

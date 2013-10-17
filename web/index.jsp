@@ -20,5 +20,8 @@
     </head>
     <body>
         <%= nombre %>
+        <form>
+            <input id="busqueda" type="button" />
+        </form>
     </body>
 </html>
