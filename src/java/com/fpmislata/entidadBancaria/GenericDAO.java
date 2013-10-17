@@ -12,9 +12,9 @@ import java.util.List;
  * @author alumno
  */
 public interface GenericDAO<T, id> {
-    T read(ID, id);
-    T insert(Object e);
-    T update(Object e);
-    T delete(ID, id);
-    List <T> = findAll();
+//    T read(ID, id);
+//    T insert(Object e);
+//    T update(Object e);
+//    T delete(ID, id);
+//    List <T> = findAll();
 }

@@ -7,6 +7,8 @@
     Date hoy = new Date();
     EntidadBancariaDAO entidadBancariaDAO = new EntidadBancariaDAO();
     EntidadBancaria entidadBancaria = entidadBancariaDAO.read(1);
+    
+    String nombre = request.getParameter("nombre");
 %>
 
 <!DOCTYPE html>
