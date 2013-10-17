@@ -8,7 +8,7 @@
     EntidadBancariaDAO entidadBancariaDAO = new EntidadBancariaDAO();
     EntidadBancaria entidadBancaria = entidadBancariaDAO.read(1);
     
-    String nombre = request.getParameter("nombre");
+        String nombre = request.getParameter("nombre");
 %>
 
 <!DOCTYPE html>
@@ -19,6 +19,6 @@
         <h2><%=entidadBancaria%></h2>
     </head>
     <body>
-        
+        <%= nombre %>
     </body>
 </html>
