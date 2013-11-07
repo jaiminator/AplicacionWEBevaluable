@@ -16,12 +16,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <h2><%=entidadBancaria%></h2>
     </head>
     <body>
-        <%= nombre %>
-        <form>
-            <input id="busqueda" type="button" />
-        </form>
+        <table style="border: 2px solid black">
+            <tr>
+                <td><%= entidadBancaria.getIdEntidad() %></td>
+                <td><%= entidadBancaria.getNombre() %></td>
+                <td><%= entidadBancaria.getCodigoEntidad() %></td>
+                <td><%= entidadBancaria.getCif() %></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+        
     </body>
 </html>

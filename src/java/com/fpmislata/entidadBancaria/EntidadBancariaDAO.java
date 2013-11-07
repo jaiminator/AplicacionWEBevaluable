@@ -35,7 +35,7 @@ public class EntidadBancariaDAO {
         EntidadBancaria entidadBancaria = new EntidadBancaria();
             
 
-        while (!resultSet.next()) {
+        if (!resultSet.next()) {
 
 
             String idEntidadBancaria1 = resultSet.getString("idEntidadBancaria");
@@ -43,6 +43,12 @@ public class EntidadBancariaDAO {
             String nombre = resultSet.getString("nombre");
             String cif = resultSet.getString("cif");
             String tipoEntidadBancaria = resultSet.getString("tipoEntidadBancaria");
+            
+            entidadBancaria.setIdEntidad(resultSet.getInt("idEntidadBancaria"));
+            entidadBancaria.setCodigoEntidad(codigoEntidad);
+            entidadBancaria.setNombre(nombre);
+            entidadBancaria.setCif(cif);
+            entidadBancaria.setTipoEntidad(TipoEntidadBancaria.BANCO);
         } 
            
         return entidadBancaria;
