@@ -44,10 +44,10 @@ public class EntidadBancariaDAO {
             String cif = resultSet.getString("cif");
             String tipoEntidadBancaria = resultSet.getString("tipoEntidadBancaria");
             
-            entidadBancaria.setIdEntidad(resultSet.getInt("idEntidadBancaria"));
-            entidadBancaria.setCodigoEntidad(codigoEntidad);
-            entidadBancaria.setNombre(nombre);
-            entidadBancaria.setCif(cif);
+            entidadBancaria.setIdEntidad(resultSet.getInt(idEntidadBancaria1));
+            entidadBancaria.setCodigoEntidad(resultSet.getString(codigoEntidad));
+            entidadBancaria.setNombre(resultSet.getString(nombre));
+            entidadBancaria.setCif(resultSet.getString(cif));
             entidadBancaria.setTipoEntidad(TipoEntidadBancaria.BANCO);
         } 
            

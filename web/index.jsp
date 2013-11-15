@@ -18,7 +18,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <table style="border: 2px solid black">
+    <center><h2>La entidad bancaria es:</h2></center>
+    <center><table style="border: 2px solid black">
             <tr>
                 <td><%= entidadBancaria.getIdEntidad() %></td>
                 <td><%= entidadBancaria.getNombre() %></td>
@@ -28,7 +29,7 @@
             <tr>
                 <td></td>
             </tr>
-        </table>
+        </table></center>
         
     </body>
 </html>
