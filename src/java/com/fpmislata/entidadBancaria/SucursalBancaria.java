@@ -4,6 +4,8 @@
  */
 package com.fpmislata.entidadBancaria;
 
+import com.fpmislata.entidadBancaria.EntidadBancaria;
+import com.fpmislata.entidadBancaria.CuentaBancaria;
 import java.util.ArrayList;
 import java.util.List;
 

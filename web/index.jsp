@@ -21,10 +21,17 @@
     <center><h2>La entidad bancaria es:</h2></center>
     <center><table style="border: 2px solid black">
             <tr>
-                <td><%= entidadBancaria.getIdEntidad() %></td>
-                <td><%= entidadBancaria.getNombre() %></td>
-                <td><%= entidadBancaria.getCodigoEntidad() %></td>
-                <td><%= entidadBancaria.getCif() %></td>
+                <td style="border: 2px solid black">ID</td>
+                <td style="border: 2px solid black">Nombre</td>
+                <td style="border: 2px solid black">Entidad</td>
+                <td style="border: 2px solid black">CIF</td>
+            </tr>
+            
+            <tr>
+                <td style="border: 1px solid black"><%= entidadBancaria.getIdEntidad() %></td>
+                <td style="border: 1px solid black"><%= entidadBancaria.getNombre() %></td>
+                <td style="border: 1px solid black"><%= entidadBancaria.getCodigoEntidad() %></td>
+                <td style="border: 1px solid black"><%= entidadBancaria.getCif() %></td>
             </tr>
             <tr>
                 <td></td>

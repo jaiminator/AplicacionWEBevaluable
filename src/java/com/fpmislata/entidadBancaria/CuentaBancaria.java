@@ -4,6 +4,7 @@
  */
 package com.fpmislata.entidadBancaria;
 
+import com.fpmislata.entidadBancaria.MovimientoBancario;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;

@@ -4,6 +4,8 @@
  */
 package com.fpmislata.entidadBancaria;
 
+import com.fpmislata.entidadBancaria.CuentaBancaria;
+import com.fpmislata.entidadBancaria.TipoMovimientoBancario;
 import java.math.BigDecimal;
 import java.util.Date;
 
