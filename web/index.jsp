@@ -33,8 +33,12 @@
                 <td style="border: 1px solid black"><%= entidadBancaria.getCodigoEntidad() %></td>
                 <td style="border: 1px solid black"><%= entidadBancaria.getCif() %></td>
             </tr>
+            
             <tr>
-                <td></td>
+                <td style="border: 1px solid black"><%= entidadBancaria.getIdEntidad() %></td>
+                <td style="border: 1px solid black"><%= entidadBancaria.getNombre() %></td>
+                <td style="border: 1px solid black"><%= entidadBancaria.getCodigoEntidad() %></td>
+                <td style="border: 1px solid black"><%= entidadBancaria.getCif() %></td>
             </tr>
         </table></center>
         
